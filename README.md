@@ -12,6 +12,7 @@ Please note that the random seed has not been fixed in the simulation experiment
 Folder “Empirics Section 4”: run main.m to reproduce Tables 1,2,3, and Figures 2,4,5
 
 Folder “Simulations OnlineSupplement”:
+
 •	Run Experiment1_HL.m to replicate the First Experiment (Table S.1 and Table S.2). Please select MA or AR loadings (see the preamble in the m-file).
 
 •	Run Experiment2_Onatski.m to replicate the Second Experiment (Table S.3 and Table S.4). Please select MA or AR loadings (see the preamble in the m-file).
