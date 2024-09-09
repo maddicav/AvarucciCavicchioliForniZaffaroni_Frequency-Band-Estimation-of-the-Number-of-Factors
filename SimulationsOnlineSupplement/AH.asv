@@ -1,0 +1,43 @@
+function[kER,KGR]=AH(x,qmax);
+[T,~]=size(x);
+[~,n]=size(x);
+M1=mean(x,1);
+x=x-M1-mean(x,2)+mean(M1);
+%
+%
+if n<T
+S=(x'*x)/(T*n);
+else
+S=(x*x')/(T*n);
+end
+%
+%
+d=eigs(S,qmax+1);
+m=min(n,T);
+er=zeros(qmax,1);
+%
+for w=1:qmax
+er(w)=d(w)/d(w+1);
+end
+%
+[mER,indER]=max(er);
+kER=indER;
+%
+%
+%
+ds=zeros(qmax+1,1);
+for i=1:(qmax);
+ds(i)=(sum(d(i:m)))/(sum(d(i+1:m)));
+end
+%
+%
+%
+gr=zeros(qmax,1);
+%
+for w=1:qmax
+gr(w)=log(ds(w))/log(ds(w+1));
+end
+%
+[mGR,indGR]=max(gr);
+kGR=indGR;
+%
