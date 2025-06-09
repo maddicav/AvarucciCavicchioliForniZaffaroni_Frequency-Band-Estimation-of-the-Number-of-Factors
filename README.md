@@ -1,4 +1,5 @@
 The repository contains the Matlab files and the datasets to reproduce Tables 1-3, Figures 2-4 (main text, Section 4) and Tables S1-S9 (Online Supplement) of the manuscript JASA-T&M-2024-0780.R1
+
 In this document, we give detailed information regarding the code files necessary to reproduce the simulation results and the empirical analysis.
 _________________________________________________________________________________________
 Folder: “Simulations_OnlineSupplement”
